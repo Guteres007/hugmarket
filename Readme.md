@@ -20,6 +20,9 @@ make build
 make install
 ```
 
+The Docker environment provides `OMDB_API_KEY` for the IMDb example.
+When running `bin/imdb-title.sh` directly, set `OMDB_API_KEY` in your shell.
+
 ## Run The Examples
 
 Run the IMDb title fetcher:

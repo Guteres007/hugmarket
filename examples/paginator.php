@@ -5,6 +5,7 @@ declare(strict_types=1);
 require __DIR__ . '/../vendor/autoload.php';
 
 use Martinandrasi\Hugmarket\Movie;
+use Martinandrasi\Hugmarket\PaginationResult;
 use Martinandrasi\Hugmarket\Paginator;
 
 $movies = [
@@ -23,6 +24,5 @@ $paginationResult = $paginator->paginate(
     items: $movies,
     page: 2,
 );
-
 
 print_r($paginationResult->items);
